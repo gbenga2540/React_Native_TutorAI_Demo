@@ -6,21 +6,18 @@ import BasicTextEntry from '../../Components/Basic_Text_Entry/Basic_Text_Entry';
 import CustomStatusBar from '../../Components/Custom_Status_Bar/Custom_Status_Bar';
 import Colors from '../../Colors/Colors';
 import BasicButton from '../../Components/Basic_Button/Basic_Button';
-import { no_double_clicks } from '../../Utils/No_Double_Clicks/No_Double_Clicks';
 
 const HomePage: FunctionComponent = () => {
     const [isAudioPlaying, setIsAudioPlaying] = useState<boolean>(false);
     const [responseText, setResponseText] = useState<string>('');
     const [responseTextBTE, setResponseTextBTE] = useState<string>('');
 
-    const make_request = no_double_clicks({
-        execFunc: () => {
-            if (responseTextBTE) {
-                setResponseTextBTE('');
-                Tts.speak(responseText);
-            }
-        },
-    });
+    const make_request = () => {
+        if (responseTextBTE) {
+            setResponseTextBTE('');
+            Tts.speak(responseText);
+        }
+    };
 
     useEffect(() => {
         setResponseText(responseTextBTE);

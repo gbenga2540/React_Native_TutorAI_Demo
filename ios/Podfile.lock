@@ -77,10 +77,6 @@ PODS:
     - hermes-engine/Pre-built (= 0.71.3)
   - hermes-engine/Pre-built (0.71.3)
   - libevent (2.1.12)
-  - lottie-ios (3.5.0)
-  - lottie-react-native (6.0.0-rc.3):
-    - lottie-ios (~> 3.5.0)
-    - React-Core
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
     - boost
@@ -339,10 +335,6 @@ PODS:
     - RCTTypeSafety
     - React-Core
     - ReactCommon/turbomodule/core
-  - react-native-sensitive-info (5.5.8):
-    - React
-  - react-native-spinkit (1.4.1):
-    - React
   - react-native-video (5.2.1):
     - React-Core
     - react-native-video/Video (= 5.2.1)
@@ -434,51 +426,12 @@ PODS:
     - React-perflogger (= 0.71.3)
   - RNGestureHandler (2.9.0):
     - React-Core
-  - RNImageCropPicker (0.39.0):
-    - React-Core
-    - React-RCTImage
-    - RNImageCropPicker/QBImagePickerController (= 0.39.0)
-    - TOCropViewController
-  - RNImageCropPicker/QBImagePickerController (0.39.0):
-    - React-Core
-    - React-RCTImage
-    - TOCropViewController
-  - RNReanimated (3.0.2):
-    - DoubleConversion
-    - FBLazyVector
-    - FBReactNativeSpec
-    - glog
-    - RCT-Folly
-    - RCTRequired
-    - RCTTypeSafety
-    - React-callinvoker
-    - React-Core
-    - React-Core/DevSupport
-    - React-Core/RCTWebSocket
-    - React-CoreModules
-    - React-cxxreact
-    - React-jsi
-    - React-jsiexecutor
-    - React-jsinspector
-    - React-RCTActionSheet
-    - React-RCTAnimation
-    - React-RCTBlob
-    - React-RCTImage
-    - React-RCTLinking
-    - React-RCTNetwork
-    - React-RCTSettings
-    - React-RCTText
-    - ReactCommon/turbomodule/core
-    - Yoga
   - RNScreens (3.20.0):
     - React-Core
     - React-RCTImage
-  - RNVectorIcons (9.2.0):
-    - React-Core
   - SocketRocket (0.6.0)
   - TextToSpeech (4.1.0):
     - React
-  - TOCropViewController (2.6.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -512,8 +465,6 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
-  - lottie-ios (from `../node_modules/lottie-ios`)
-  - lottie-react-native (from `../node_modules/lottie-react-native`)
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -532,8 +483,6 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
-  - react-native-sensitive-info (from `../node_modules/react-native-sensitive-info`)
-  - react-native-spinkit (from `../node_modules/react-native-spinkit`)
   - react-native-video (from `../node_modules/react-native-video`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -549,10 +498,7 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
-  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
-  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - TextToSpeech (from `../node_modules/react-native-tts`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -572,7 +518,6 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
-    - TOCropViewController
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -588,10 +533,6 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
-  lottie-ios:
-    :path: "../node_modules/lottie-ios"
-  lottie-react-native:
-    :path: "../node_modules/lottie-react-native"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -622,10 +563,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
-  react-native-sensitive-info:
-    :path: "../node_modules/react-native-sensitive-info"
-  react-native-spinkit:
-    :path: "../node_modules/react-native-spinkit"
   react-native-video:
     :path: "../node_modules/react-native-video"
   React-perflogger:
@@ -656,14 +593,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
-  RNImageCropPicker:
-    :path: "../node_modules/react-native-image-crop-picker"
-  RNReanimated:
-    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
-  RNVectorIcons:
-    :path: "../node_modules/react-native-vector-icons"
   TextToSpeech:
     :path: "../node_modules/react-native-tts"
   Yoga:
@@ -688,8 +619,6 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 38bfe887e456b33b697187570a08de33969f5db7
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
-  lottie-react-native: 4b07ce6d17647dd24641ae5cd7ae614034318456
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: bec48f07daf7bcdc2655a0cde84e07d24d2a9e2a
@@ -706,8 +635,6 @@ SPEC CHECKSUMS:
   React-jsinspector: 9f7c9137605e72ca0343db4cea88006cb94856dd
   React-logger: 957e5dc96d9dbffc6e0f15e0ee4d2b42829ff207
   react-native-safe-area-context: 39c2d8be3328df5d437ac1700f4f3a4f75716acc
-  react-native-sensitive-info: 400c6e3d27945e15c8cddb5b4b92233c85ee06f8
-  react-native-spinkit: da294fd828216ad211fe36a5c14c1e09f09e62db
   react-native-video: c26780b224543c62d5e1b2a7244a5cd1b50e8253
   React-perflogger: af8a3d31546077f42d729b949925cc4549f14def
   React-RCTActionSheet: 57cc5adfefbaaf0aae2cf7e10bccd746f2903673
@@ -723,13 +650,9 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 7bf0dafc7b727d93c8cb94eb00a9d3753c446c3e
   ReactCommon: 6f65ea5b7d84deb9e386f670dd11ce499ded7b40
   RNGestureHandler: 071d7a9ad81e8b83fe7663b303d132406a7d8f39
-  RNImageCropPicker: 14fe1c29298fb4018f3186f455c475ab107da332
-  RNReanimated: f0dd6b881808e635ef0673f89642937d6c141314
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
-  RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   TextToSpeech: b3aa777ff5585705f179c0a2436bfd0926d1716e
-  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   Yoga: 5ed1699acbba8863755998a4245daa200ff3817b
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

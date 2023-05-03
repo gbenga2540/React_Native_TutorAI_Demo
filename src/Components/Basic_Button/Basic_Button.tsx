@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import Colors from '../../Colors/Colors';
 import { fonts } from '../../Fonts/Fonts';
-import { DebouncedFuncLeading } from 'lodash';
 
 interface BasicButtonProps {
     buttonHeight?: number | string;
@@ -11,7 +10,7 @@ interface BasicButtonProps {
     marginBottom?: number | string;
     borderRaduis?: number;
     marginHorizontal?: number;
-    execFunc: DebouncedFuncLeading<() => void>;
+    execFunc: () => void;
     disabled?: boolean;
     backgroundColor?: string;
 }
@@ -30,7 +29,7 @@ const BasicButton: FunctionComponent<BasicButtonProps> = ({
     return (
         <TouchableOpacity
             disabled={disabled || false}
-            onPress={execFunc}
+            onPress={() => execFunc()}
             style={[
                 styles.b_b_main,
                 {
